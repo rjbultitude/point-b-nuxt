@@ -1,3 +1,3 @@
 export default {
-  CONTENT: 'release-data',
+  CONTENT: 'content',
 }

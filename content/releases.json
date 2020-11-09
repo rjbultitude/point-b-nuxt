@@ -1,0 +1,12 @@
+{
+  "releases" : {
+    "r001": {
+      "title": "A previous version of myself",
+      "year": "2006"
+    },
+    "r002": {
+      "title": "After burns",
+      "year": "2005"
+    }
+  }
+}

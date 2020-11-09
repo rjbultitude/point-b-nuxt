@@ -1,16 +1,26 @@
 <template>
   <div class="container">
     <div>
-      <Header />
       <h1 class="title">point-b</h1>
-      <Releases />
+      <h1 v-html="content.index.title"></h1>
+      <div v-html="content.index.content"></div>
       <SocialSection />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import conf from '../data-conf'
+
+export default {
+  head() {
+    return { title: this.content.title }
+  },
+  async asyncData({ $content }) {
+    const content = await $content(conf.CONTENT).fetch()
+    return { content }
+  },
+}
 </script>
 
 <style>

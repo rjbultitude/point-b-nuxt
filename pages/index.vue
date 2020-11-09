@@ -3,6 +3,7 @@
     <div>
       <Header />
       <h1 class="title">point-b</h1>
+      <Releases />
       <SocialSection />
     </div>
   </div>

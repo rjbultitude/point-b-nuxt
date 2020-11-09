@@ -30,7 +30,7 @@
       </a>
       <ul role="list" class="nav-list nav-main-list">
         <li class="list-item">
-          <a class="nav-link" href="/index.html" id="home-link">Home</a>
+          <a class="nav-link" href="/" id="home-link">Home</a>
         </li>
         <li class="list-item">
           <a class="nav-link" href="/music/index.html" id="music-link">Music</a>

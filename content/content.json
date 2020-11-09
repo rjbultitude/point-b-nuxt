@@ -1,8 +1,8 @@
 {
-  "title": "FrontAid CMS with Nuxt Content",
+  "title": "Point B Content",
   "index": {
-    "title": "Index Page",
-    "content": "<p>Some <strong>index</strong> content...</p>"
+    "title": "Point B Music",
+    "content": "Deep Urban Rhythms"
   },
   "pages": [
     {

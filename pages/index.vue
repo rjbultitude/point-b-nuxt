@@ -5,20 +5,22 @@
       <h1 v-html="content.index.title"></h1>
       <div v-html="content.index.content"></div>
       <SocialSection />
+      <Releases :releases="releases.releases" test="testData" />
     </div>
   </div>
 </template>
 
 <script>
-import conf from '../data-conf'
-
+import contentConfig from '../content.config'
+import releasesConfig from '../releases.config'
 export default {
   head() {
     return { title: this.content.title }
   },
   async asyncData({ $content }) {
-    const content = await $content(conf.CONTENT).fetch()
-    return { content }
+    const content = await $content(contentConfig.CONTENT).fetch()
+    const releases = await $content(releasesConfig.CONTENT).fetch()
+    return { content, releases }
   },
 }
 </script>

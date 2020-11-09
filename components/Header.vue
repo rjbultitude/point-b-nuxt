@@ -30,15 +30,18 @@
       </a>
       <ul role="list" class="nav-list nav-main-list">
         <li class="list-item">
-          <a class="nav-link" href="/" id="home-link">Home</a>
+          <NuxtLink to="/">Home page</NuxtLink>
+          <!-- <a class="nav-link" href="/" id="home-link">Home</a> -->
         </li>
         <li class="list-item">
-          <a class="nav-link" href="/music/index.html" id="music-link">Music</a>
+          <NuxtLink to="/music">Music</NuxtLink>
+          <!-- <a class="nav-link" href="/music/index.html" id="music-link">Music</a> -->
         </li>
         <li class="list-item">
-          <a class="nav-link" href="/discog/index.html" id="discog-link">
+          <NuxtLink to="/discog">Discography</NuxtLink>
+          <!-- <a class="nav-link" href="/discog/index.html" id="discog-link">
             Discog
-          </a>
+          </a> -->
         </li>
         <!-- <li class="list-item">
           <a class="nav-link" href="patches.php" id="patches-link">Patches</a>

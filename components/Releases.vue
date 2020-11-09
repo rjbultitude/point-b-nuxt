@@ -2,18 +2,15 @@
   <div class="section">
     <h2 class="logo">Releases</h2>
     <article>
-      <nuxt-content :document="article" />
+      <!-- {{ $log('test: ', test) }} -->
+      <h1 v-html="releases.r001.title"></h1>
+      <div v-html="releases.r001.year"></div>
     </article>
   </div>
 </template>
 
 <script>
-// import dataConf from '../data-conf'
-
 export default {
-  async asyncData({ $content }) {
-    const article = await $content('articles').fetch()
-    return { article }
-  },
+  props: ['releases', 'test'],
 }
 </script>

@@ -11,6 +11,15 @@
 
 <script>
 export default {
-  props: ['releases', 'test'],
+  props: {
+    releases: {
+      type: Object,
+      required: true,
+    },
+    test: {
+      type: String,
+      default: '',
+    },
+  },
 }
 </script>

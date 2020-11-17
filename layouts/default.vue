@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <Header />
     <Nuxt />
   </div>
@@ -15,6 +15,9 @@ export default {
 </script>
 
 <style>
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,100);
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -32,5 +35,22 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+body {
+  background-color: #f9b766;
+}
+
+.wrapper {
+  max-width: 960px;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.image-border {
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 </style>

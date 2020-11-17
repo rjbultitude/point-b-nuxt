@@ -197,9 +197,9 @@
 }
 .section-sm {
   color: white;
+  display: none;
   position: fixed;
   position: sticky;
-  display: block;
   z-index: 10;
   bottom: -5.5em;
   padding: 0.75em 0;

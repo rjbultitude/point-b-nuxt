@@ -21,8 +21,8 @@ export default {
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
+  font-size: 1em;
+  line-height: 1;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -39,10 +39,6 @@ html {
 
 body {
   background-color: #f9b766;
-}
-
-.wrapper {
-  max-width: 960px;
 }
 
 .figure img {
